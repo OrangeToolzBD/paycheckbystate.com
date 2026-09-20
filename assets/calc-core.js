@@ -141,16 +141,19 @@
   // The inputs go into the link only when the visitor asks for a shareable link. They are never written to the
   // address bar while typing, so page-view analytics cannot pick up salaries, balances or other entries.
   const shareUrl = () => `${location.origin}${location.pathname}#${encodeURIComponent(JSON.stringify(state))}`;
-  const copyBtn = el('button', { type: 'button', onclick: () => {
-    const done = () => { copyBtn.textContent = 'Link copied'; setTimeout(() => { copyBtn.textContent = 'Copy link to this result'; }, 2000); };
+  const copyIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+  const printIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>';
+  const copyBtn = el('button', { type: 'button', class: 'calc-btn calc-btn-copy', onclick: () => {
+    const label = copyBtn.querySelector('.btn-label');
+    const done = () => { label.textContent = 'Link copied'; setTimeout(() => { label.textContent = 'Copy link to this result'; }, 2000); };
     if (navigator.clipboard) navigator.clipboard.writeText(shareUrl()).then(done, () => window.prompt('Copy this link:', shareUrl()));
     else window.prompt('Copy this link:', shareUrl());
-  } }, 'Copy link to this result');
+  } });
+  copyBtn.innerHTML = `<span class="btn-icon">${copyIcon}</span><span class="btn-label">Copy link to this result</span>`;
+  const printBtn = el('button', { type: 'button', class: 'calc-btn calc-btn-print', onclick: () => window.print() });
+  printBtn.innerHTML = `<span class="btn-icon">${printIcon}</span><span class="btn-label">Print</span>`;
 
   root.append(form, out,
-    el('div', { class: 'calc-actions' }, [
-      copyBtn,
-      el('button', { type: 'button', onclick: () => window.print() }, 'Print'),
-    ]));
+    el('div', { class: 'calc-actions' }, [copyBtn, printBtn]));
   rebuild();
 })();
