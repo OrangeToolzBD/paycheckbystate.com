@@ -50,7 +50,14 @@ main > .wrap { padding-top: 32px; }
 h1 { font-family: var(--font-head); font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.2; margin: 0 0 12px; }
 h2 { font-family: var(--font-head); font-size: 1.35rem; margin: 36px 0 10px; }
 h3 { font-size: 1.1rem; margin: 24px 0 8px; }
-.answer { font-size: 1.08rem; background: var(--bg); border: 1px solid var(--tint-line); border-left: 4px solid var(--brand); padding: 18px 20px; border-radius: 0 var(--radius) var(--radius) 0; box-shadow: 0 10px 26px color-mix(in srgb, var(--brand) 12%, transparent); }
+.answer { font-size: 1.08rem; background: var(--bg); border: 1px solid var(--tint-line); border-radius: var(--radius); padding: 18px 20px; box-shadow: 0 10px 26px color-mix(in srgb, var(--brand) 10%, transparent); }
+
+.answer-panel { display: flex; align-items: flex-start; gap: 16px; background: var(--bg); border: 1px solid var(--tint-line); border-radius: var(--radius); padding: 20px 22px; margin: 22px 0 28px; box-shadow: 0 10px 26px color-mix(in srgb, var(--brand) 10%, transparent); }
+.answer-panel .icon { width: 42px; height: 42px; border-radius: 50%; background: var(--tint-2); color: var(--brand); display: flex; align-items: center; justify-content: center; flex: none; }
+.answer-panel .icon svg { width: 21px; height: 21px; }
+.answer-panel .answer { background: none; border: 0; box-shadow: none; padding: 0; margin: 0; }
+.answer-panel .updated { margin: 10px 0 0; }
+@media (max-width: 480px) { .answer-panel { flex-direction: column; } }
 .updated { color: var(--muted); font-size: .9rem; margin: 14px 0 18px; }
 .breadcrumb { font-size: .88rem; color: var(--muted); margin-bottom: 14px; }
 .breadcrumb a { color: var(--muted); }
