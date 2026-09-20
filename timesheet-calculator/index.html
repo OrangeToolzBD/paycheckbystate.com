@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timesheet Calculator: Hours Worked and Weekly Pay</title>
+<meta name="description" content="Add up clock-in and clock-out times with breaks, including overnight shifts, and see total hours, overtime hours and gross pay for the week.">
+<link rel="canonical" href="https://paycheckbystate.com/timesheet-calculator/">
+<meta property="og:title" content="Timesheet Calculator: Hours Worked and Weekly Pay">
+<meta property="og:description" content="Add up clock-in and clock-out times with breaks, including overnight shifts, and see total hours, overtime hours and gross pay for the week.">
+<meta property="og:url" content="https://paycheckbystate.com/timesheet-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://paycheckbystate.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://paycheckbystate.com/assets/og-image.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>:root{--brand:#1d4ed8;--font:system-ui, "Segoe UI", Roboto, Arial, sans-serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://paycheckbystate.com/#org","name":"Paycheck by State","url":"https://paycheckbystate.com/","description":"Paycheck by State is a free set of paycheck and income tax calculators that apply the IRS 2026 withholding tables, Social Security and Medicare rules, and each state’s published 2026 income tax brackets."},{"@type":"WebApplication","name":"Timesheet Calculator","url":"https://paycheckbystate.com/timesheet-calculator/","description":"Add up clock-in and clock-out times with breaks, including overnight shifts, and see total hours, overtime hours and gross pay for the week.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://paycheckbystate.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Paycheck by State","item":"https://paycheckbystate.com/"},{"@type":"ListItem","position":2,"name":"Timesheet Calculator","item":"https://paycheckbystate.com/timesheet-calculator/"}]}]}</script>
+
+<script src="/assets/tax-data.js" defer></script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/"><img src="/assets/logo.png" alt="Paycheck by State" width="58" height="34"></a><nav class="site"><a href="/paycheck-calculator/">Paycheck</a><a href="/salary-to-hourly-calculator/">Salary to Hourly</a><a href="/income-tax-calculator/">Income Tax Calculator 2026</a><a href="/overtime-calculator/">Overtime</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Paycheck by State</a> › Timesheet Calculator</nav>
+<h1>Timesheet Calculator</h1>
+<p class="answer">A <strong>timesheet calculator</strong> totals clock-out minus clock-in time for each shift, less unpaid breaks. Five days from 8:30 to 17:00 with 30-minute unpaid lunches come to 40 hours, or $880 at $22 an hour. Federal law requires time and a half for hours over 40 in a workweek (<a href="https://www.dol.gov/agencies/whd/overtime" rel="nofollow noopener">U.S. Department of Labor</a>).</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Paycheck by State</a></p>
+<div id="calculator" data-calc="timesheet"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How do you calculate hours worked?</h2>
+<p>For each shift, subtract the start time from the end time, then subtract any unpaid break. Add the shifts for the week. Using 24-hour times avoids a.m. and p.m. mistakes: 08:30 to 17:00 is 8.5 hours, and a 30-minute unpaid lunch leaves 8 hours.</p><p>Overnight shifts cross midnight, so add 24 hours when the end time is earlier than the start. A 22:00 to 06:00 shift is 8 hours, and the calculator handles this for you.</p><p>Overtime is counted per workweek. The <a href="https://www.dol.gov/agencies/whd/overtime" rel="nofollow noopener">Department of Labor</a> defines a workweek as a fixed, recurring 168 hours and says hours cannot be averaged over two or more weeks. At $22 an hour, a 45-hour week pays 40 × $22 plus 5 × $33, or $1,045. The tool pays 1.5× on every hour past your threshold; for double time, use the <a href="/overtime-calculator/">overtime calculator</a>.</p>
+<h2>How do you convert minutes to decimal hours?</h2>
+<p>Divide the minutes by 60. Fifteen minutes is 0.25 hours, 30 minutes is 0.5 and 45 minutes is 0.75. So 7 hours 45 minutes is 7.75 hours, not 7.45. Payroll multiplies your rate by the decimal figure, which is why the conversion matters.</p><div class="table-wrap"><table class="data"><thead><tr><th>Minutes</th><th>Decimal hours</th><th>Minutes</th><th>Decimal hours</th></tr></thead><tbody><tr><td>5</td><td>0.08</td><td>30</td><td>0.50</td></tr><tr><td>6</td><td>0.10</td><td>40</td><td>0.67</td></tr><tr><td>10</td><td>0.17</td><td>45</td><td>0.75</td></tr><tr><td>15</td><td>0.25</td><td>50</td><td>0.83</td></tr><tr><td>20</td><td>0.33</td><td>55</td><td>0.92</td></tr></tbody></table></div><p>Example: 7.75 hours at $22 an hour is $170.50. Reading 7:45 as 7.45 would pay $163.90, which is $6.60 short for the day.</p>
+<h2>Are breaks paid time?</h2>
+<p>Short breaks usually are; real meal breaks usually are not. The <a href="https://www.dol.gov/general/topic/workhours/breaks" rel="nofollow noopener">Department of Labor</a> says federal law does not require breaks, but when an employer offers short ones of about 5 to 20 minutes, they count as paid work time. Meal periods of 30 minutes or more generally do not.</p><p>A meal period is unpaid only if you are completely relieved from duty, according to <a href="https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked" rel="nofollow noopener">DOL Fact Sheet #22</a> (revised July 2008). Eating at your desk while answering calls is still work time.</p><p>Some states set their own rest and meal break rules, so check your state labor department. In this calculator, enter only unpaid break minutes in the break column. Leave paid rest breaks out, or your total will come up short.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>How many hours is 9:00 to 3:00?</summary><p>Six hours, if you mean 9 a.m. to 3 p.m. with no unpaid break. In 24-hour time that is 09:00 to 15:00, and 15 minus 9 is 6. Take a 30-minute unpaid lunch out and you have 5.5 paid hours. At $22 an hour, six hours is $132 before taxes.</p></details>
+<details><summary>How many hours are 7:30 to 3:30?</summary><p>Eight hours from 7:30 a.m. to 3:30 p.m. Written as 07:30 to 15:30, the difference is exactly 8. A 30-minute unpaid lunch makes it 7.5 paid hours. Five of those shifts with lunch come to 37.5 hours a week, which stays under the federal 40-hour overtime threshold.</p></details>
+<details><summary>How many hours is 9:30 to 4:30?</summary><p>Seven hours from 9:30 a.m. to 4:30 p.m., or 09:30 to 16:30 in 24-hour time. Subtract a 30-minute unpaid lunch and 6.5 hours remain. Enter the times and the break in the calculator to total several days at once.</p></details>
+<details><summary>How do I convert hours of PTO to days?</summary><p>Divide your PTO hours by the hours in your normal workday. With 8-hour days, 24 hours of PTO is 3 days; with 7.5-hour days, 30 hours is 4 days. The rules for earning and paying PTO come from your employer, because the <a href="https://www.dol.gov/general/topic/workhours/vacation_leave" rel="nofollow noopener">FLSA does not require paid vacation</a>.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.irs.gov/pub/irs-pdf/p15t.pdf" rel="nofollow noopener">IRS — Publication 15-T (2026), Federal Income Tax Withholding Methods</a></li>
+<li><a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" rel="nofollow noopener">IRS — Tax inflation adjustments for tax year 2026</a></li>
+<li><a href="https://www.ssa.gov/oact/cola/cbb.html" rel="nofollow noopener">SSA — Contribution and Benefit Base</a></li>
+<li><a href="https://www.irs.gov/taxtopics/tc751" rel="nofollow noopener">IRS — Topic no. 751, Social Security and Medicare withholding rates</a></li>
+<li><a href="https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/" rel="nofollow noopener">Tax Foundation — State Individual Income Tax Rates and Brackets, 2026</a></li>
+<li><a href="https://www.dol.gov/agencies/whd/overtime" rel="nofollow noopener">U.S. Department of Labor — Overtime Pay</a></li>
+<li><a href="https://www.dol.gov/general/topic/workhours/breaks" rel="nofollow noopener">U.S. Department of Labor — Breaks and Meal Periods</a></li>
+<li><a href="https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked" rel="nofollow noopener">U.S. Department of Labor — Fact Sheet #22: Hours Worked Under the FLSA</a></li>
+<li><a href="https://www.dol.gov/general/topic/workhours/vacation_leave" rel="nofollow noopener">U.S. Department of Labor — Vacation Leave</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/overtime-calculator/">Overtime Calculator</a></li>
+<li><a href="/raise-calculator/">Raise Calculator</a></li>
+<li><a href="/paycheck-calculator/">Paycheck Calculator</a></li>
+<li><a href="/salary-to-hourly-calculator/">Salary to Hourly Calculator</a></li>
+<li><a href="/income-tax-calculator/">Income Tax Calculator 2026</a></li>
+<li><a href="/w4-calculator/">W-4 Withholding Calculator</a></li>
+<li><a href="/bonus-tax-calculator/">Bonus Tax Calculator</a></li>
+</ul>
+<p class="disclaimer">Estimates for information only — not tax, legal or payroll advice. Your employer’s payroll system and your tax return decide the real numbers.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/paycheck-calculator/">Paycheck Calculator</a> <a href="/salary-to-hourly-calculator/">Salary to Hourly Calculator</a> <a href="/income-tax-calculator/">Income Tax Calculator 2026</a> <a href="/overtime-calculator/">Overtime Calculator</a> <a href="/raise-calculator/">Raise Calculator</a> <a href="/w4-calculator/">W-4 Withholding Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Estimates for information only — not tax, legal or payroll advice. Your employer’s payroll system and your tax return decide the real numbers.</p>
+<p>© <span id="y"></span> Paycheck by State</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

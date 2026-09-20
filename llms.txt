@@ -1,0 +1,24 @@
+# Paycheck by State
+
+> Paycheck by State is a free set of paycheck and income tax calculators that apply the IRS 2026 withholding tables, Social Security and Medicare rules, and each state’s published 2026 income tax brackets.
+
+## Tools
+- [Paycheck Calculator](https://paycheckbystate.com/paycheck-calculator/): See your 2026 take-home pay after federal withholding, Social Security, Medicare and state income tax, for any state and pay schedule. Free, no sign-up.
+- [Salary to Hourly Calculator](https://paycheckbystate.com/salary-to-hourly-calculator/): Convert a yearly salary to an hourly rate, or an hourly wage to yearly, monthly and weekly pay, using your own hours and paid weeks.
+- [Income Tax Calculator 2026](https://paycheckbystate.com/income-tax-calculator/): Estimate your 2026 federal income tax with the new brackets and standard deduction, plus your state’s income tax, marginal and effective rates.
+- [Overtime Calculator](https://paycheckbystate.com/overtime-calculator/): Work out overtime pay at time and a half or double time, your total weekly pay, and your effective hourly rate for the week.
+- [Raise Calculator](https://paycheckbystate.com/raise-calculator/): Enter a raise as a percentage, a dollar amount or a new salary and see the other two, plus what it adds to each paycheck before tax.
+- [W-4 Withholding Calculator](https://paycheckbystate.com/w4-calculator/): Compare the federal tax you will owe for 2026 with what your paychecks will withhold, and see the extra amount per check that closes the gap.
+- [Bonus Tax Calculator](https://paycheckbystate.com/bonus-tax-calculator/): See how much federal withholding, Social Security and Medicare come out of a bonus under the IRS 22% supplemental wage rule, and what you keep.
+- [Timesheet Calculator](https://paycheckbystate.com/timesheet-calculator/): Add up clock-in and clock-out times with breaks, including overnight shifts, and see total hours, overtime hours and gross pay for the week.
+
+## Guides and data
+- [How to Fill Out a W-4](https://paycheckbystate.com/how-to-fill-out-a-w4/): What each step of the 2026 Form W-4 asks, which steps you can skip, and how to handle two jobs, dependents and side income, per IRS instructions.
+- [State Income Tax Rates 2026](https://paycheckbystate.com/state-income-tax-rates/): Every state’s 2026 income tax brackets and top rate, the states with no tax on wages, and take-home pay on a $65,000 salary in each.
+
+## Sources
+- IRS — Publication 15-T (2026), Federal Income Tax Withholding Methods: https://www.irs.gov/pub/irs-pdf/p15t.pdf
+- IRS — Tax inflation adjustments for tax year 2026: https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill
+- SSA — Contribution and Benefit Base: https://www.ssa.gov/oact/cola/cbb.html
+- IRS — Topic no. 751, Social Security and Medicare withholding rates: https://www.irs.gov/taxtopics/tc751
+- Tax Foundation — State Individual Income Tax Rates and Brackets, 2026: https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/
