@@ -122,7 +122,7 @@ table.data th, table.data td { border-bottom: 1px solid var(--line); padding: 8p
 
 .disclaimer { font-size: .88rem; color: var(--muted); border-top: 1px solid var(--line); margin-top: 32px; padding-top: 14px; }
 .ad-slot { min-height: 0; }             /* AdSense placeholder — reserve height here once ads go live to avoid CLS */
-footer.site { position: relative; margin-top: 26px; clip-path: polygon(0 26px, 100% 0, 100% 100%, 0 100%); background: linear-gradient(165deg, #101728, #0a0f1c); color: color-mix(in srgb, var(--on-brand) 78%, var(--brand) 22%); font-size: .9rem; }
+footer.site { position: relative; margin-top: -1px; clip-path: polygon(0 26px, 100% 0, 100% 100%, 0 100%); background: linear-gradient(165deg, #101728, #0a0f1c); color: color-mix(in srgb, var(--on-brand) 78%, var(--brand) 22%); font-size: .9rem; }
 footer.site a { color: color-mix(in srgb, var(--on-brand) 78%, var(--brand) 22%); margin-right: 14px; }
 .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 32px; padding: 64px 0 28px; }
 .footer-brand .logo { display: inline-flex; background: #fff; padding: 8px 12px; border-radius: 10px; }
